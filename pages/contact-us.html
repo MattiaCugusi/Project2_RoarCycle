@@ -50,12 +50,18 @@
         <form action="./mail.php" method="post">
 
           <div class="inputwrapper">
-          <label for="name">First Name</label>
+            <label for="name" class="newline">First Name</label>
+          </div>
+
+          <div class="inputwrapper">
           <input type="text" name="name" id="name" placeholder="First Name">
          </div>
+
+         <div class="inputwrapper">
+          <label for="name">Email</label>
+        </div>
          
          <div class="inputwrapper">
-          <label for="email">Email</label>
           <input type="email" name="email" id="email" placeholder="dan@exampe.com">
         </div>
 
@@ -78,8 +84,21 @@
           <input type="radio" name="contact-pref" id="email2" value="Email">
           <label for="email">Email</label>
         </div>
+
+        <div class="inputwrapper">
+          <select name="county" id="county">
+            <option value="Not-Chosen">Chose County</option>
+            <option value="Limerick">Limerick</option>
+            <option value="Galway">Galway</option>
+            <option value="Dublin">Dublin</option>
+
           
-          <input type="submit" value="Fire Away">
+
+
+          </select>
+        </div>
+          
+          <input type="submit" value="Fire Away" class="mybutton">
         </form>
 
       </div>

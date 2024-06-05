@@ -219,3 +219,7 @@ main {
    background-color: rgb(178, 116, 236);
    transition-delay: 100ms;
 }
+
+.inputwrapper {
+   margin-bottom: 20px;
+}

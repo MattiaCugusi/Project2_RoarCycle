@@ -143,7 +143,8 @@ main {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228); 
- }
+    transition-duration: 1s;
+   }
 
  .mybutton:hover {
    background-color: #8fddcf;
@@ -155,12 +156,14 @@ main {
  }
 
  .navButton{
-   border: 1px solid white ;
+   border: 1px solid rgb(255, 255, 255) ;
    padding: 11px;
    font-family: "Playfair Display", serif;
    display: inline-block;
    position: relative;
- }
+   border-bottom: 1px solid lightgrey;
+}
+ 
 
  .testimonials {
    display: flex;
@@ -186,8 +189,9 @@ main {
  .dropdown {
    display: none;
    position: absolute;
-   z-index: 1;
+   z-index: 99;
    padding-top: 20px;
+   margin-left: -10px;
    text-align: center;
  }
 
@@ -196,10 +200,17 @@ main {
     }
     
   .dropdown .navButton {
-   width: 120px;
-   background-color: white;
- }
+   width: 90px;
+   background-color: rgba(255, 255, 255, 0.868);
+   border-radius: 2px;
+}
 
  .dropdown .navButton a {
    color: #FA4083;
  }
+
+ 
+.dropdown-box .navButton:hover {
+   background-color: rgb(178, 116, 236);
+   transition-delay: 100ms;
+}

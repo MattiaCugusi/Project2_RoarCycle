@@ -139,10 +139,22 @@ main {
     padding: 11px 25px;
     display: inline-block;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.228); 
  }
 
  .herobox2 img {
    border-radius: 12px;
  }
+
+ .navbutton{
+  
+   border: 1px solid white ;
+   padding: 11px;
+   font-family: "Playfair Display", serif;
+   font-size: 20px;
+   
+   
+ }
+
+ 

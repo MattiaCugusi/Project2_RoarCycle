@@ -1,8 +1,11 @@
-
-
+html {
+   background-color: #FC5E55;
+}
 
 body {
-    background-color: #FC5E55;
+    background-image: url(./images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     font-family: "Playfair Display", serif;
     color: white;
     font-size: 1.125rem;
@@ -151,12 +154,12 @@ main {
    border-radius: 12px;
  }
 
- .navbutton{
-  
+ .navButton{
    border: 1px solid white ;
    padding: 11px;
    font-family: "Playfair Display", serif;
-   font-size: 20px;
+   display: inline-block;
+   position: relative;
  }
 
  .testimonials {
@@ -178,4 +181,25 @@ main {
  .tbox :last-child {
    font-style:italic;
 
+ }
+
+ .dropdown {
+   display: none;
+   position: absolute;
+   z-index: 1;
+   padding-top: 20px;
+   text-align: center;
+ }
+
+ .navButton:hover .dropdown {
+   display: block;
+    }
+    
+  .dropdown .navButton {
+   width: 120px;
+   background-color: white;
+ }
+
+ .dropdown .navButton a {
+   color: #FA4083;
  }
